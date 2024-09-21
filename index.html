@@ -33,7 +33,7 @@
     </style>
   </head>
   <body class="bg-[#021227] text-[#cccccc]">
-    <header class="w-full space-y-8 fixed z-50 bg-[#021227] p-5">
+    <header class="w-full space-y-8 fixed z-50 bg-[#021227] sm:p-5">
       <div x-data="{ open: false }" class="">
         <div
           style="font-family: 'Roboto Mono', monospace"
@@ -210,22 +210,22 @@
     </header>
     <!-- About Me -->
     <section
-      class="flex flex-col-reverse sm:flex-row lg:min-h-screen bg-[#021227] px-8 sm:px-12 py-12 max-w-screen-xl mx-auto"
+      class="flex flex-col-reverse sm:flex-row lg:min-h-screen bg-[#021227] px-8 sm:px-12 lg:py-12 mb-12 max-w-screen-xl mx-auto"
       id="aboutMe">
       <div class="sm:2/3 w-full">
         <p
           style="font-family: 'Roboto Mono', monospace"
-          class="text-[#227B94] font-semibold mt-7">
+          class="text-[#227B94] font-semibold mt-8">
           Hi, my name is
         </p>
         <h2 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-[#cccccc]">
           JHOVANIE FLORES.
         </h2>
         <h2
-          class="text-3xl lg:text-4xl xl:text-4xl font-bold text-[#227B94] mt-3 lg:mt-7">
+          class="text-3xl lg:text-4xl xl:text-4xl font-bold text-[#227B94] mt-3 lg:mt-6">
           FULLSTACK SOFTWARE DEVELOPER.
         </h2>
-        <p class="mt-6 lg:mt-10 max-w-lg text-[#cccccc] break-after-auto">
+        <p class="mt-6 lg:mt-10 max-w-lg text-[#cccccc]">
           I am a Full stack web developer specializing in developing
           cross-platform web applications by integrating Laravel and Vue.js for
           seamless functionality. I am adept at creating robust and visually
@@ -258,7 +258,7 @@
       <div class="hidden sm:flex sm:w-2/3 w-full">
         <img src="./images/flores.png" alt="hero-img" class="" />
       </div>
-      <div class="flex justify-center sm:hidden sm:w-2/5">
+      <div class="flex justify-center sm:hidden sm:w-2/3 mt-20">
         <img
           src="./images/flores-sm.png"
           alt="Avatar"
@@ -452,8 +452,8 @@
         <div class="flex flex-col sm:flex-row sm:gap-12 mt-20">
           <!-- left-side -->
           <div
-            class="sm:w-1/2 border border-base-300 h-[380px] order-2 sm:order-none">
-            <div class="cursor-menu h-[300px] rounded">
+            class="sm:w-1/2 border border-base-300 h-full order-2 m-3 b sm:order-none">
+            <div class="cursor-menu h-full rounded">
               <div
                 class="relative text-[#ffffff78] transition-[background-image] duration-500 before:w-full before:h-full before:block before:absolute before:bottom-0 before:bg-gradient-to-r before:from-[rgba(2,22,49,0.5)] before:to-[rgba(2,22,48,0.5)] before:transition-[width] before:duration-1000 before:ease-in-out hover:before:w-0">
                 <img
@@ -465,7 +465,7 @@
           </div>
           <!-- right-side -->
           <div
-            class="sm:w-1/2 h-[300px] flex flex-col justify-center order-1 sm:order-none">
+            class="sm:w-1/2 h-full flex flex-col justify-center order-1 sm:order-none">
             <h2
               class="sm:text-end text-2xl font-bold mb-8 sm:relative sm:right-[10%]">
               01. Petpardon Web Application
@@ -515,7 +515,7 @@
         <!-- project-2 -->
         <div class="flex flex-col sm:flex-row sm:gap-12 mt-20 sm:mt-20">
           <!-- right side -->
-          <div class="sm:w-1/2 h-[380px] flex flex-col justify-center">
+          <div class="sm:w-1/2 h-full flex flex-col justify-center">
             <h2
               class="text-3xl font-bold mb-8 sm:relative sm:left-[10%] lg:left-1/4">
               02. Raffle Draw
@@ -562,7 +562,7 @@
 
           <!-- left side -->
           <div
-            class="sm:w-1/2 border border-base-300 h-[380px] order-2 sm:order-none">
+            class="sm:w-1/2 border border-base-300 h-full order-2 m-3 border-none">
             <div
               class="relative text-white/50 transition-[background-image] duration-500 before:w-full before:h-full before:block before:absolute before:bottom-0 before:bg-gradient-to-r before:from-[rgba(2,22,49,0.5)] before:to-[rgba(2,22,48,0.5)] before:transition-[width] before:duration-1000 before:ease-in-out hover:before:w-0">
               <div class="featured-project-img-01 transition-all duration-500">
@@ -578,7 +578,7 @@
         <div class="flex flex-col sm:flex-row sm:gap-12 mt-20">
           <!-- left-side -->
           <div
-            class="sm:w-1/2 border border-base-300 h-[385px] order-2 sm:order-none">
+            class="sm:w-1/2 border border-base-300 h-full order-2 m-3 border-none">
             <div class="cursor-menu h-[300px] rounded">
               <div
                 class="relative text-[#ffffff78] transition-[background-image] duration-500 before:w-full before:h-full before:block before:absolute before:bottom-0 before:bg-gradient-to-r before:from-[rgba(2,22,49,0.5)] before:to-[rgba(2,22,48,0.5)] before:transition-[width] before:duration-1000 before:ease-in-out hover:before:w-0">
@@ -591,7 +591,7 @@
           </div>
           <!-- right-side -->
           <div
-            class="sm:w-1/2 h-[300px] flex flex-col justify-center order-1 sm:order-none">
+            class="sm:w-1/2 h-full flex flex-col justify-center order-1 sm:order-none">
             <h2
               class="sm:text-end text-2xl font-bold mb-8 sm:relative sm:right-[10%]">
               01. Heavens Gift Life Insurance
