@@ -33,7 +33,7 @@
     </style>
   </head>
   <body class="bg-[#021227] text-[#cccccc]">
-    <header class="w-full space-y-8 fixed z-50 bg-[#021227] mb-5 sm:p-5">
+    <header class="w-full space-y-8 fixed z-50 bg-[#021227] sm:mb-5 sm:p-5">
       <div x-data="{ open: false }" class="">
         <div
           style="font-family: 'Roboto Mono', monospace"
@@ -68,13 +68,13 @@
           </div>
           <div class="">
             <a
-              href="#certification"
+              href="#certifications"
               class="transition-all font-bold hover:text-[#227B94]"
               >Certification</a
             >
           </div>
         </div>
-        <div @click="open = !open" class="flex justify-end p-3 mr-3 sm:hidden">
+        <div @click="open = !open" class="flex justify-end mr-4 sm:hidden">
           <div>
             <svg
               class="h-10 w-6"
@@ -106,13 +106,13 @@
           x-transition:leave="transition ease-in duration-200"
           x-transition:leave-start="transform opacity-100 scale-100"
           x-transition:leave-end="transform opacity-0 scale-95"
-          class="absolute z-50 w-72 rounded-md shadow-lg ltr:origin-top-right rtl:origin-top-left end-0"
+          class="absolute z-50 w-72 rounded-md shadow-lg ltr:origin-top-right rtl:origin-top-left end-0 mr-2"
           @click="open = false">
           <div
             class="rounded-md ring-1 ring-black ring-opacity-5 bg-slate-200 dark:bg-slate-800">
             <a
               class="block w-full px-4 py-2 text-start text-sm leading-5 text-slate-900 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-900 focus:outline-none focus:bg-slate-300 dark:focus:bg-slate-700 transition duration-150 ease-in-out py-4 flex items-center"
-              href="#about-me"
+              href="#aboutMe"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -169,25 +169,6 @@
 
             <a
               class="block w-full px-4 py-2 text-start text-sm leading-5 text-slate-900 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-900 focus:outline-none focus:bg-slate-300 dark:focus:bg-slate-700 transition duration-150 ease-in-out py-4 flex items-center"
-              href="#certifications"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-5 mr-2">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3"></path>
-              </svg>
-
-              Certifications</a
-            >
-
-            <a
-              class="block w-full px-4 py-2 text-start text-sm leading-5 text-slate-900 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-900 focus:outline-none focus:bg-slate-300 dark:focus:bg-slate-700 transition duration-150 ease-in-out py-4 flex items-center"
               href="#projects"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -203,6 +184,24 @@
               </svg>
 
               Projects</a
+            >
+            <a
+              class="block w-full px-4 py-2 text-start text-sm leading-5 text-slate-900 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-900 focus:outline-none focus:bg-slate-300 dark:focus:bg-slate-700 transition duration-150 ease-in-out py-4 flex items-center"
+              href="#certifications"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5 mr-2">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3"></path>
+              </svg>
+
+              Certifications</a
             >
           </div>
         </div>
@@ -225,7 +224,7 @@
           <h2 class="text-2xl lg:text-4xl xl:text-4xl font-bold text-[#227B94]">
             FULLSTACK SOFTWARE DEVELOPER.
           </h2>
-          <p class="mt-4 lg:mt-8 max-w-lg text-[#cccccc]">
+          <p class="mt-4 sm:mt-3 max-w-lg text-[#cccccc]">
             I am a Full stack web developer specializing in developing
             cross-platform web applications by integrating Laravel and Vue.js
             for seamless functionality. I am adept at creating robust and
@@ -700,7 +699,7 @@
     <!-- Certificates -->
     <section
       class="px-8 sm:px-16 py-12 max-w-screen-xl mx-auto"
-      id="projects"
+      id="certifications"
       style="font-family: 'Roboto Mono', monospace">
       <div class="flex justify-center items-center gap-12 pb-12">
         <div class="h-px flex-1 bg-[#227B94] hidden sm:block"></div>
